@@ -8,7 +8,7 @@ inputs:
     default: 'carton test'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://ghcr.io/step-security/swiftwasm-action:v5.9.0@sha256:a71ca5410f520e6cb6211a35e984a0849c7aac3a3c18ca5247423bf58d4f5cc2' # v5.9.0
   args:
     - bash
     - -c
