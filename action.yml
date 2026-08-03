@@ -1,0 +1,13 @@
+# action.yml
+name: 'Builder for Swift projects that support WebAssembly'
+description: 'This action has SwiftWasm toolchain, SDK and developer tools preinstalled for your CI needs'
+inputs:
+  shell-action:
+    description: 'Shell action to run'
+    required: false
+    default: 'carton test'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.shell-action }}
