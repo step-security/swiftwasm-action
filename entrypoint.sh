@@ -43,4 +43,4 @@ if [ "$REPO_PRIVATE" != "false" ]; then
   fi
 fi
 
-$*
+exec "$@"
